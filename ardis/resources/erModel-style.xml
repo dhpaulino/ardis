@@ -1,0 +1,72 @@
+<mxStylesheet>
+	
+    <add as="defaultVertex" extend="defaultVertex"> 
+        <add as="strokeColor" value="black"/>
+        <add as="fillColor" value="white"/>
+        <add as="fontSize" value="11"/>
+        <add as="fontColor" value="black"/>
+        <add as="fontFamily" value="Arial"/>
+    </add>
+ 
+    
+    <add as="entity" extends="defaultVertex">
+        <add as="shape" value="rectangle"/>        
+    </add>
+    <add as="relationship" extends="defaultVertex">
+        <add as="shape" value="rhombus"/>    
+        <add as="perimeter" value="rhombusPerimeter"/> 
+    </add>
+    
+    <add as="especialization" extends="defaultVertex">
+        <add as="shape" value="triangle"/>  
+        <add as="direction" value="north"/>   
+        <add as="perimeter" value="trianglePerimeter"/>
+        <add as="noLabel" value="1" />  
+    </add>
+    <add as="attribute" extends="defaultVertex">
+        <add as="shape" value="ellipse"/> 
+        <add as="perimeter" value="ellipsePerimeter"/>
+        <add as="labelPosition" value="right"/>
+        <add as="align" value="left"/>
+        <add as="resizable" value="0"/>   
+    </add>
+    <add as="primaryKey" extends="attribute">
+        <add as="fillColor" value="darkblue"/>
+        <add as="shape" value="ellipse"/> 
+        <add as="perimeter" value="ellipsePerimeter"/>
+        <add as="labelPosition" value="right"/>
+        <add as="align" value="left"/>
+        <add as="resizable" value="0"/>   
+    </add>
+    <add as="associativeEntity" extend="defaultVertex">
+        <add as="shape" value="rectangle" />
+        <add as="perimeter" value="rectanglePerimeter" />
+        <add as="verticalAlign" value="top" />
+        <add as="align" value="right" />
+    </add>
+    <add as="associativeRelation" extend="defaultVertex">
+        <add as="shape" value="rhombus" />
+       
+        <add as="perimeter" value="rhombusPerimeter" />
+    </add>
+    <add as="defaultEdge" extends="defaultEdge">
+        <add as="shape" value="connector" />
+        <add as="edgeStyle" value="elbowEdgeStyle"/>
+        <add as="endArrow" value="none" />
+        <add as="strokeColor" value="black"/>
+      
+    </add>
+    <add as="cardinalidade" extend="defaultEdge">
+        <add as="align" value="right"/>
+        <add as="verticalLabelPosition" value="left" />
+        <add as="verticalAlign" value="bottom" />
+        <add as="noLabel" value="1"/>
+    </add>
+    <add as="entidadeFraca" extend="cardinalidade">
+       
+        <add as="strokeWidth" value="2.5"/>
+    </add>
+    
+ 
+	
+</mxStylesheet>

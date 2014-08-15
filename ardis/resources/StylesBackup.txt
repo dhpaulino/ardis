@@ -1,0 +1,10 @@
+Entidade Associoativa - Entidade-> shape=rectangle;strokeColor=black;fillColor=white
+				Relacionamento-> shape=rhombus;strokeColor=black;fillColor=white;algn=center
+				
+Especialização - shape=triangle;rotation=270;strokeColor=black;fillColor=white
+
+Atributo Identificador - shape=ellipse;fillColor=black;strokeColor=black
+
+Atributo Composto - shape=ellipse;strokeColor=black;fillColor=white
+
+Atributo Multivalorado - shape=ellipse;strokeColor=black;fillColor=white
