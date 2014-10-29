@@ -1,4 +1,4 @@
 ardis
 =====
 
-A relational database modelling project
+A relational and conceptual database modelling program
